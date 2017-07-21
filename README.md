@@ -9,7 +9,8 @@ Development and General Usage of the language
 - and other python gems
 
 
-### classes_toolkit/
-### Class development toolkit:
-Tutorial on creating classes as a toolkit in Python. 
+
+#### classes_toolkit/
+#### Class development toolkit:
+Tutorial on using Python's **built-in toolset** for creating classes. 
 We look at commonly encountered challenges and how to solve them using Python.
