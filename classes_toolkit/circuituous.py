@@ -7,7 +7,7 @@ import math
 class Circle(object):                       # new style class
     "An advanced circle analytic toolkit"
 
-    version = '0.2'                         # class variable
+    version = '0.3'                         # class variable
 
     def __init__(self, radius):
         self.radius = radius                # instance variable
@@ -20,4 +20,10 @@ class Circle(object):                       # new style class
 
     def perimeter(self):
         return 2.0 * math.pi * self.radius
+
+    @classmethod                            # alternative constructor
+    def from_bbd(cls, bbd):
+        'Construct a circle from a bounding box diagonal'
+        radius = bbd / 2.0 / math.sqrt(2.0)
+        return cls(radius)
 
