@@ -1,4 +1,4 @@
-'''Tutorial test script'''
+"""Tutorial test script"""
 
 from circuituous import Circle
 

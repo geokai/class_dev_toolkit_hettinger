@@ -1,4 +1,4 @@
-"""Implementing Circuituous (tm) 'area' method on a range of circles"""
+"""Implementing Circuituous (tm) 'area' method on a range of circles."""
 
 from circuituous import Circle
 from random import random, seed

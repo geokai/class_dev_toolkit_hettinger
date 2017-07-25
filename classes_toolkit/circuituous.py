@@ -1,11 +1,10 @@
-"""Circuituous, LLC -- An Advanced Circle Analytics Company"""
-# Include a Module DocString for your module:
+"""Circuituous, LLC -- An Advanced Circle Analytics Company."""
 
 import math
 
-# Document your class and methods:
+
 class Circle(object):                       # new style class
-    "An advanced circle analytic toolkit"
+    """An advanced circle analytic toolkit."""
 
     version = '0.3'                         # class variable
 
@@ -14,16 +13,17 @@ class Circle(object):                       # new style class
 
 
     def area(self):
-        "Perform quarrature on a shape of uniform radius"
+        """Perform quarrature on a shape of uniform radius."""
         return math.pi * self.radius ** 2.0
 
 
     def perimeter(self):
+        """Evaluate the perimeter length of the circle object."""
         return 2.0 * math.pi * self.radius
 
     @classmethod                            # alternative constructor
     def from_bbd(cls, bbd):
-        'Construct a circle from a bounding box diagonal'
+        """Construct a circle from a bounding box diagonal."""
         radius = bbd / 2.0 / math.sqrt(2.0)
         return cls(radius)
 
